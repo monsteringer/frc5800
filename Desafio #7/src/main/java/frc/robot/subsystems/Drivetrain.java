@@ -31,6 +31,13 @@ public class Drivetrain extends SubsystemBase {
   public void periodic() {}
 
   public void tankDrive(double leftSpeed, double rightSpeed) {
+    leftMaster.set(leftSpeed);
+    rightMaster.set(rightSpeed);
+}
+
+/*
+   public void tankDrive(double leftSpeed, double rightSpeed) {
     diffDrive.tankDrive(leftSpeed, rightSpeed);
   }
 }
+*/
