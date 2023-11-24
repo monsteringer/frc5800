@@ -10,7 +10,7 @@ public class MoveForward extends CommandBase {
   private final Timer timer = new Timer();
 
   private final double duration = 3;
-  private double speed = 0;
+  private double speed = 0.6;
 
   public MoveForward (Drivetrain drivetrain, double speed) {
     this.speed = speed;
